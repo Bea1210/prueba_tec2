@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6b8fc; /* Color de fondo lila */
+    color: #333;
+}
+
+header {
+    background-color: #9c27b0; /* Un tono de púrpura más oscuro para el encabezado */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main.galeria {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea columnas que se ajustan */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+.grid-item {
+    overflow: hidden; /* Para que la imagen no se salga del contenedor */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    transition: transform 0.3s ease-in-out; /* Animación suave al hacer hover */
+}
+
+.grid-item img:hover {
+    transform: scale(1.05); /* Pequeño efecto de zoom al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px; /* Espacio entre la galería y el footer */
+}
